@@ -1,0 +1,136 @@
+* {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container {
+  position: relative;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+.day {
+  text-align: center;
+  padding: 10px;
+  color: #ff317b;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+#calendar div {
+  text-align: center;
+  padding: 10px;
+}
+
+.not-current-date {
+  color: rgba(146, 146, 146, 0.767);
+}
+
+.cal-button {
+  border: 0;
+  background-color: white;
+}
+
+ul button {
+  border: 0;
+  padding: 0 5px;
+  margin: 5px;
+  border-radius: 30%;
+}
+
+.delete {
+  background-image: url(images/trash3.svg);
+  background-color: #f5edff;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  padding: 5px;
+}
+
+.change {
+  background-image: url(images/pencil.svg);
+  background-color: #f5edff;
+  color: #000;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  padding: 5px;
+  bottom: 5px;
+}
+body .modal {
+  display: inline-block;
+  position: relative;
+  width: 70%;
+  height: 50%;
+  background-color: #f5edff;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+#todolist {
+  padding: 25px;
+  margin: 5px;
+  top: 10px;
+}
+
+form {
+  padding: 20px;
+}
+
+.hidden-none {
+  display: none;
+}
+.hidden-hidden {
+  visibility: hidden;
+}
+
+.clickedDay {
+  border-radius: 20%;
+  background-color: #ffedf8;
+}
+
+span {
+  margin: 10px;
+  padding: 15px 5px;
+}
+
+#todolist div {
+  margin: 10px;
+}
+
+.restBtn {
+  padding: 5px 10px;
+  border: 1px solid #d7bafa;
+  border-radius: 5%;
+  background-color: #f5edff;
+}
